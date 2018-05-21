@@ -1,0 +1,7 @@
+<%= form_for @kitten do |f| %>
+	Name: <%= f.text_field :name %><br>
+	Age: <%= f.text_field :age %><br>
+	Cuteness: <%= f.text_field :cuteness %><br>
+	Softness: <%= f.text_field :softness %><br>
+	<%= f.submit "Submit" %>
+<% end %>

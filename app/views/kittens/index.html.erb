@@ -1,0 +1,6 @@
+<h1>Kittens!</h1>
+<% @kittens.each do |kitten| %>
+	<%= link_to kitten.name, kitten %> 
+	(<%= link_to "destroy", kitten, method: :delete,
+															data: { confirm: "Are you sure? :(" } %>)
+<% end %>

@@ -1,0 +1,5 @@
+<h2>Edit!</h2>
+<%= render 'shared/kittens_form' %>
+<h3>Delete Kitten</h3>
+<%= link_to "destroy", @kitten, method: :delete,
+															data: { confirm: "Are you sure? :(" } %>
